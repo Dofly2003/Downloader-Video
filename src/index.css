@@ -1,0 +1,25 @@
+/* Pastikan kanvas aplikasi full-bleed */
+html, body, #root {
+  height: 100%;
+}
+
+#root {
+  max-width: none;   /* penting: hilangkan batas lebar */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gradient untuk seluruh halaman */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #6f42c1 0%, #0d6efd 45%, #20c997 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Opsional: hindari scroll horizontal jika ada elemen melebar */
+body, #root {
+  overflow-x: hidden;
+}
